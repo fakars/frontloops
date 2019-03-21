@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+    margin:0 auto;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin: 0 10vw 0 10vw;
+    background: #799BCE;
+    font-family: 'Roboto', sans-serif;
+    
+}
+a {
+    text-decoration: none;
+}
+
+.container{
+
+    display: flex;
+    justify-content: space-around;
+    background: #FBFBFB;    
+    border-radius: 5px;
+    box-shadow: 7px 5px 25px -4px rgba(0,0,0,0.31);
+}
+
+.boxes{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em 2em 1.5em 2em;
+    text-align: center;
+    margin: 1.5em;
+    flex-basis: 100%;
+        
+}
+
+.boxes img{
+    height: 5em;
+    margin-bottom: 2em;
+}
+
+.boxes h2{
+    margin-bottom: 1.4em;
+    color:#5D6BC1;
+}
+
+.boxes p{
+    width: 85%;
+    color: #9E9C98;
+}
+
+
+.boxes:hover{
+    box-sizing:border-box;
+    background: #F6F6F6;
+    transition: 450ms;
+    outline: 0.4px solid #ccc;
+}
+
+.titles{
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+.price{
+    margin-top: 1.3em;
+    font-size: 2.3em;
+    color:#5D6BC1;    
+}
+
+.price:before{
+    content:"$";
+    position: relative;
+    bottom: 11px; 
+    font-size: 0.6em;
+    
+}
+
+.price:after{
+    content: "/month";
+    position: relative;     
+    font-size: 0.6em;
+    font-weight: lighter;
+}
+
+
+
+@media (max-width:950px){
+    .container{
+
+        flex-direction: column;
+        margin-top: 500px;       
+        
+    }
+
+}
